@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <section>
+            <ol>
+                <li class="event">Event number -- 1</li>
+                <li class="event">Event number -- 2</li>
+                <li class="event">Event number -- 3</li>
+                <li class="event">Event number -- 4</li>
+                <li class="event">Event number -- 5</li>
+                <li class="event">Event number -- 6</li>
+            </ol>
+        </section>
+
+        <script>
+            const events = document.getElementsByClassName("event");
+            for(let item of events){
+               
+                item.addEventListener("click", function(event){
+                    event.target.parentNode.removeChild(event.target)
+                     
+                })
+            }
+        </script>
+</body>
+</html>

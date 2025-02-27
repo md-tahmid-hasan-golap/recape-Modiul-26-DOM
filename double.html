@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>double event</title>
+
+    <style>
+        body{
+            border: 2px solid yellowgreen;
+            margin: 2px;
+            padding: 5px
+        }
+        section{
+            border: 2px solid aquamarine;
+            margin: 2px;
+            padding: 5px
+        }
+        ul{
+            border: 2px solid blue;
+            margin: 2px;
+            padding: 5px
+        }
+        li{
+            border: 2px solid red;
+            margin: 2px;
+            padding: 5px
+        }
+    </style>
+</head>
+<body id="body_main">
+  <h1>explore event thim</h1>
+
+    <section id="main_section">
+        <h2>event double list</h2>
+        <ul id="items_list">
+            <li id="first_list">Apple</li>
+            <li>Orange</li>
+            <li>banana</li>
+        </ul>
+
+    </section>
+
+    <script>
+        document.getElementById("first_list").addEventListener("click", function(){
+             
+             console.log("click item 1")
+        })
+        document.getElementById("items_list").addEventListener("click", function(){
+            console.log("click items list")
+        })
+        document.getElementById("main_section").addEventListener("click", function(){
+            console.log("click section")
+        })
+        document.getElementById("body_main").addEventListener("click", function(){
+            console.log("click body")
+        })
+        
+    </script>
+    
+</body>
+</html>
