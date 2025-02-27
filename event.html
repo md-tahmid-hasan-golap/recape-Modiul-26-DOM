@@ -14,12 +14,24 @@
     </style>
 </head>
 <body>
-    <h1>click the button & change the heading title</h1>
+    <h1 id="main_heading">click the button & change the heading title</h1>
 
-    <h2 id="heading_title">Golap Raj</h2>
+  
+      <p id="set_element">no Name</p>
+      <input id="input_fild" type="text" placeholder="Your Name">
+      <button id="click_btn">click</button>
 
-    <button id="btn_your_name">Whats Your Name</button>
+      <!-- <script>
+        document.getElementById("click").addEventListener("click", function(){
 
+             const apple = document.getElementById("apple");
+             apple.innerText = "badana"
+        })
+
+
+         const titleSet = document.getElementById("main_heading");
+         titleSet.setAttribute("title", "Hi I am heading")
+      </script> -->
     <script type="module" src="./js/event.js"></script>
     
 </body>
